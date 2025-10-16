@@ -1,0 +1,164 @@
+/* :root {
+    --color-bg: powderblue;
+    --color-text-main: black;
+    --color-primary: honeydew;
+    --link: green;
+  }
+   */
+
+.letter {
+    position: absolute;
+    font-size: 20px;
+    pointer-events: none;
+
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.collectable {
+    cursor: pointer;
+
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.imageE {
+    width: 100%;
+    height: auto;
+}
+
+.imageEye {
+    width: 100%;
+    height: auto;
+}
+
+#flower {
+
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* 让子元素垂直排列 */
+    align-items: center;    /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    height: 100vh;          /* 容器高度占满视口 */
+  
+}
+button {
+    margin: 10px 0; 
+    font-size: large;       
+}
+
+.normal {
+    font-family: Arial, sans-serif;
+    color: rgb(254, 255, 254);
+}
+
+.scrolling-text {
+    font-family: "Borel", cursive;
+    /* font-size: 24px; */
+    color: rgb(254, 255, 254);
+}
+
+.answer-text {
+    font-family: "Borel", cursive;
+    filter: blur(2px);
+    color: rgb(254, 255, 254);
+}
+
+/* upload img */
+.upload-container {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 0px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area.dragging {
+    border-color: #f45dbf;
+    background-color: #ebf8ff;
+}
+
+.upload-area:hover {
+    border-color: hsl(339, 73%, 57%);
+}
+
+.upload-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    color: #666;
+}
+
+.upload-text {
+    font-family: "Borel", cursive;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.upload-button {
+    background-color: #e74578;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.upload-button:hover {
+    background-color: #ff5588;
+}
+
+#file-input {
+    display: none;
+}
+
+/* #preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: none;
+} */
+#preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+#preview-image:hover {
+    transform: scale(1.02);
+    /* 鼠标悬停时轻微放大 */
+}
+
+.upload-area {
+    /* ... 保留原有样式 ... */
+    transition: opacity 0.3s ease;
+}
+
+.remove-button {
+    background-color: #e53e3e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 16px;
+    display: none;
+}
+
+.remove-button:hover {
+    background-color: #c53030;
+}

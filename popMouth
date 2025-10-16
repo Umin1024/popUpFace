@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Cairo:wght@200..1000&family=Libre+Barcode+39+Extended+Text&family=Noto+Sans+Ethiopic:wght@100..900&family=Noto+Sans+New+Tai+Lue:wght@400..700&family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Puddles&family=Tiny5&display=swap"
+        rel="stylesheet">
+    <title>Mouth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* width: 3000px; */
+            height: 100vh;
+            /* 确保至少占满视口高度 */
+            margin: 50 px;
+            background-color: #ff4b78;
+        }
+
+        p {
+            /* margin: 10px 0; */
+            /* 添加段落间距 */
+            white-space: normal;
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <p>
+            <marquee direction="down" scrolldelay="1000">
+                <span class="scrolling-text">
+                    🤍🤍🤍🤍🤍🤍🤍 How do you feel? Let's exchange our font-family!<br />
+                </span>
+            </marquee>
+            <marquee direction="up" scrolldelay="1200">
+                <span class="scrolling-text">
+                    🤍🤍🤍🤍🤍🤍🤍 Tell me your's, I give you mine:<br />
+                </span>
+            </marquee>
+        </p>
+
+        <p>
+            <span class="normal">Your favortie font: </span>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" /><br />
+            <span class="normal">Mine :</span>
+            <span class="answer-text">borel</span>
+        </p>
+    </div>
+</body>
+
+</html>
